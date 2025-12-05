@@ -446,7 +446,7 @@ def main():
                         st.metric("Risk Level", explanation['risk_level'])
 
                     risk_gauge = viz_manager.create_risk_gauge(explanation['risk_level'])
-                    st.plotly_chart(risk_gauge, use_container_width=True)
+                    st.plotly_chart(risk_gauge, width="stretch")
 
                     alert_needed, alert_reasons = alert_system.check_alert_conditions(explanation)  # Use explanation here
                     
@@ -567,7 +567,7 @@ def main():
                                 delta=f"{'⚠️ High' if anxiety_score > alert_system.alert_thresholds['anxiety_score'] else '✅ Normal'}")
 
                     radar_chart = viz_manager.create_assessment_radar_chart(results)
-                    st.plotly_chart(radar_chart, use_container_width=True)
+                    st.plotly_chart(radar_chart, width="stretch")
 
                     user_email, emergency_email = db_manager.get_user_emails(user_id)
                     user_info = {
@@ -949,7 +949,7 @@ def main():
 
             # Create mood trend chart from real data
             mood_chart = viz_manager.create_mood_trend_chart(daily_scores)
-            st.plotly_chart(mood_chart, use_container_width=True)
+            st.plotly_chart(mood_chart, width="stretch")
 
             # Recent assessments summary table, latest 5 assessments
             conn = sqlite3.connect(db_manager.db_path)
@@ -972,7 +972,7 @@ def main():
             }
             recent_df = pd.DataFrame(recent_data)
             st.subheader("📋 Recent Assessment Summary")
-            st.dataframe(recent_df, use_container_width=True)
+            st.dataframe(recent_df, width="stretch")
 
             # Display earned badges
             if stats['badges']:
@@ -1014,5 +1014,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
