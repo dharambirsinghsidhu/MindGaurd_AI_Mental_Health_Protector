@@ -59,9 +59,8 @@ class ModelManager:
         """Load all pre-trained models"""
         try:
             # Text analysis models
-            model_path = download_model_if_needed()
-            with open('model_path.pkl', 'rb') as f:
-                self.models['text_ensemble'] = joblib.load(f)
+            model_path = download_model_if_needed() 
+            self.models['text_ensemble'] = joblib.load(model_path)
             with open('models/tfidf_vectorizer.pkl', 'rb') as f:
                 self.models['tfidf'] = joblib.load(f)
             with open('models/label_encoder.pkl', 'rb') as f:
@@ -1015,4 +1014,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
