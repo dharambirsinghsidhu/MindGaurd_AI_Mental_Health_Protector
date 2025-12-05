@@ -22,8 +22,8 @@ import pickle
 
 # --- Import from your new files ---
 from utils import DatabaseManager, AlertSystem # IMPORTANT CHANGE
-from chatbot import render_chatbot_interface # NEW IMPORT
-from voice_analyzer import render_voice_analysis_interface # NEW IMPORT
+# from chatbot import render_chatbot_interface # NEW IMPORT
+# from voice_analyzer import render_voice_analysis_interface # NEW IMPORT
 from download_model import download_model_if_needed
 
 warnings.filterwarnings('ignore')
@@ -1003,17 +1003,18 @@ def main():
         with tab6:
             st.header("Advanced AI Chatbot")
             # This function is imported from your chatbot.py file
-            render_chatbot_interface(db_manager, user_id, username)
+            #render_chatbot_interface(db_manager, user_id, username)
 
         with tab7:
             st.header("In-Depth Voice Analysis")
             # This function is imported from your voice_analyzer.py file
-            render_voice_analysis_interface(db_manager, user_id, username)
+            #render_voice_analysis_interface(db_manager, user_id, username)
 
 
 if __name__ == "__main__":
 
     main()
+
 
 
 
