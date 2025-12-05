@@ -23,6 +23,7 @@ import os
 from utils import DatabaseManager, AlertSystem # IMPORTANT CHANGE
 from chatbot import render_chatbot_interface # NEW IMPORT
 from voice_analyzer import render_voice_analysis_interface # NEW IMPORT
+from download_model import download_model_if_needed
 
 warnings.filterwarnings('ignore')
 
@@ -57,7 +58,8 @@ class ModelManager:
         """Load all pre-trained models"""
         try:
             # Text analysis models
-            with open('models/ensemble_model.pkl', 'rb') as f:
+            model_path = download_model_if_needed()
+            with open('model_path.pkl', 'rb') as f:
                 self.models['text_ensemble'] = joblib.load(f)
             with open('models/tfidf_vectorizer.pkl', 'rb') as f:
                 self.models['tfidf'] = joblib.load(f)
@@ -1010,4 +1012,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
