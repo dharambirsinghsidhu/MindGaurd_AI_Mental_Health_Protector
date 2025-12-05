@@ -3,8 +3,8 @@ streamlit>=1.28.0
 pandas>=1.5.0
 numpy>=1.24.0
 scikit-learn>=1.3.0
-joblib
-gdown
+joblib>=1.3.0
+gdown>=5.0.0
 
 # Visualization
 plotly>=5.15.0
@@ -40,6 +40,4 @@ accelerate>=0.20.0
 requests>=2.31.0
 
 # Note: Removed pyttsx3 and pyaudio as they don't work in deployed environments
-
 # TTS is now handled by browser's Web Speech API
-
