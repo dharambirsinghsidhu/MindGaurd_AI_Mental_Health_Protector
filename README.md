@@ -55,7 +55,7 @@ Here are some visuals showcasing the application's interface and capabilities:
     <br>
     <p><b>Streamlit App Interface</b></p>
     <br>
-    <img src="./images/home.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="./images/dashboard.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
   <hr style="border: none; background-color: #ccc; height: 0.1px; margin: 20px 0;">
   
@@ -187,10 +187,7 @@ a. Classification Training Pipeline
             <img src="./images/Classfication_training_pipeline.png" alt="System Architecture Diagram" width="600"/>
           </div>    
       </div>
-  </div>
-
-<br>
-
+  </div> <br>
 b. Behavioral Score Prediction Pipeline
 
   <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
