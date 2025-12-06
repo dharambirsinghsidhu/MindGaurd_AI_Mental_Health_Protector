@@ -227,24 +227,36 @@ This project leverages a focused set of key technologies:
 All core files for this project are organized in the root directory:
 
 ```bash
-├── images/                           # Visual assets and system diagrams used in the README
-│   ├── ai-agents.png                 # Diagram showing the multi-agent architecture
-│   ├── dataflow.png                  # End-to-end system dataflow illustration
-│   ├── home.png                      # Screenshot of the main interface/dashboard
-│   └── prediction.png                # Screenshot of prediction/recommendation output
+├── models/                                  # Pretrained ML/NLP models
+│   ├── best_rf_anxiety_score.pkl            # Random Forest model for Anxiety prediction
+│   ├── best_rf_depression_score.pkl         # Random Forest model for Depression prediction
+│   ├── best_rf_stress_level.pkl             # Random Forest model for Stress prediction
+│   ├── tfidf_vectorizer.pkl                 # TF-IDF vectorizer for text classification
+│   ├── label_encoder.pkl                    # Label encoder for text classification labels
+│   └── ensemble_model.pkl                   # Ensemble model (LightGBM + RF + LR)
 │
-├── app.py                            # Main application script for the Krishniti AI system
-├── app.ipynb                         # Notebook exploration of the application logic
-├── sustainable_farming_system.py     # Core multi-agent architecture and orchestration
-├── sustainable_farming_system.ipynb  # Notebook for system development, testing, and debugging
+├── images/                                  # Visual assets and architecture diagrams (optional)
+│   ├── arch.png                             # Model key components
+│   ├── Classification_training_pipeline.png # End-to-end classificaiton training pipeline diagram
+|   ├── Score_prediction_pipeline.png        # End-to-end score prediction pipeline diagram
+│   └── dashboard-preview.png                # Screenshot of main app dashboard
 │
-├── farmer_advisor_dataset.csv        # Dataset containing farm-level environmental and input data
-├── marketer_researcher_dataset.csv   # Dataset containing market, demand, and economic indicators
-├── farming_agents.db                 # SQLite database storing persistent farm profiles and history
+├── app.py                                   # Main Streamlit application (MindGuard AI)
+├── utils.py                                 # DatabaseManager, AlertSystem, helper utilities
+├── chatbot.py                                # Advanced AI chatbot module with emotion detection
+├── voice_analyzer.py                         # Voice-based mental health analysis module
+├── download_model.py                         # Downloads model files from cloud storage if missing
 │
-├── requirements.txt                  # Python dependencies required to run the project
-├── LICENSE                           # License information for legal usage and distribution
-└── README.md                         # Main documentation and setup instructions
+├── nlp.py                                    # Training script for text classification models
+├── score.py                                  # Training script for behavioral prediction models
+│
+├── anxiety_depression_data.csv               # Dataset for behavioral prediction (anxiety/depression/stress)
+├── Combined_Data.csv                         # Unified dataset for training mental health text classifier
+│
+├── mindguard.db                              # SQLite database storing users, assessments, chat, and voice logs
+├── requirements.txt                          # Python dependencies required to run the system
+├── LICENSE                                   # MIT License for open-source distribution
+└── README.md                                 # Main project documentation
 ```
 
 ---
@@ -266,8 +278,8 @@ Requirements for the software and other tools to build, test and push
 1.  **Clone the Repository:**
    
     ```bash
-    git clone https://github.com/dharambirsinghsidhu/Krishniti-AI.git
-    cd Krishniti-AI
+    git clone https://github.com/dharambirsinghsidhu/MindGaurd_AI_Mental_Health_Protector.git
+    cd MindGaurd_AI_Mental_Health_Protector
     ```
 
 2.  **Create and Activate a Virtual Environment:**
