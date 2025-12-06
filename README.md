@@ -1,4 +1,5 @@
 # MindGuard AI: AI-Driven Mental Health Monitoring System for Early Crisis Detection & Proactive Interventions
+
 <br>
 
 **Live Demo:  [Click Here for Live Demo](https://mindgaurd-ai.streamlit.app/)** <div id="top"></div>
@@ -154,21 +155,7 @@ Gratitude to the original dataset creators for contributing to open mental healt
 
 ## ⚙️ System Architecture & Logic Flow
 
-The Krishniti AI platform is built around a sophisticated multi-agent system designed to process diverse agricultural data and provide comprehensive recommendations.
-
-<br>
-   
-**Core Agents:**
-
-1.  **Farmer Input Agent:** Gathers and processes farm-specific data from the farmer.
-2.  **Environmental Analysis Agent:** Analyzes soil, temperature, and rainfall data to assess environmental suitability.
-3.  **Crop Recommendation Agent:** Uses machine learning models to predict optimal crop performance based on environmental factors.
-4.  **Market Analysis Agent:** Analyzes current market trends and pricing to maximize profitability.
-5.  **Sustainability Optimization Agent:** Recommends practices to improve environmental sustainability and resource efficiency.
-6.  **Decision Integration Agent:** Synthesizes information from all preceding agents to generate final, balanced recommendations.
-
-
-<br>
+1. Core Components
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
     <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
@@ -187,6 +174,32 @@ The Krishniti AI platform is built around a sophisticated multi-agent system des
         </div>    
     </div>
 </div>
+
+<br>
+
+2. Training Pipelines
+
+a. Classification Training Pipeline
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+      <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+          <div align="center">
+            <img src="./images/Classfication_training_pipeline.png" alt="System Architecture Diagram" width="600"/>
+          </div>    
+      </div>
+  </div>
+
+<br>
+
+b. Behavioral Score Prediction Pipeline
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+      <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+          <div align="center">
+            <img src="./images/Score_prediction_pipeline.png" alt="Core Components" width="600"/>
+          </div>    
+      </div>
+  </div>
 
 ---
 
