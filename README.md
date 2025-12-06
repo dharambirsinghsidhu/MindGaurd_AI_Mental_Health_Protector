@@ -155,48 +155,26 @@ Gratitude to the original dataset creators for contributing to open mental healt
 
 ## ⚙️ System Architecture & Logic Flow
 
-1. Core Components
+#### **1. Core Components**
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
-    <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-        <div align="center">
-          <img src="./images/arch.png" alt="System Architecture Diagram" width="600"/>
-        </div>    
-    </div>
-</div>
+<img src="./images/arch.png" alt="System Architecture Diagram" width="600"/>
 
 <br>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
-    <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-        <div align="center">
-          <img src="./images/core_components.png" alt="Core Components" width="600"/>
-        </div>    
-    </div>
-</div>
+<img src="./images/core_components.png" alt="Core Components" width="600"/>
 
 <br>
 
-2. Training Pipelines
-
+#### **2. Training Pipelines**
 a. Classification Training Pipeline
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
-      <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-          <div align="center">
-            <img src="./images/Classfication_training_pipeline.png" alt="System Architecture Diagram" width="600"/>
-          </div>    
-      </div>
-  </div> <br>
+<img src="./images/Classfication_training_pipeline.png" alt="System Architecture Diagram" width="600"/>
+
+<br>
+            
 b. Behavioral Score Prediction Pipeline
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
-      <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-          <div align="center">
-            <img src="./images/Score_prediction_pipeline.png" alt="Core Components" width="600"/>
-          </div>    
-      </div>
-  </div>
+<img src="./images/Score_prediction_pipeline.png" alt="Core Components" width="600"/>
 
 ---
 
